@@ -1,0 +1,5 @@
+int(input())
+arr=input().split()
+arr_list=list(map(int,arr))
+print(arr_list)
+print(sum(arr_list))

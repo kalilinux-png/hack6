@@ -1,0 +1,6 @@
+int(input())
+num=input().split()
+num=list(map(int,num))
+print(num,type(num))
+maxm=max(num)
+print(num[maxm])
