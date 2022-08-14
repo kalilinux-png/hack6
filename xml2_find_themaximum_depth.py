@@ -1,16 +1,18 @@
 import xml.etree.ElementTree as etree
 
-maxdepth = 0
-
 maxdepth = -1
 def depth(elem, level):
     global maxdepth
-    if elem:
+    print("depth",maxdepth,"level ",level)
+    if level== maxdepth:
         maxdepth+=1
-    for k in elem:
-        depth(k,level+1)
 
-    
+    for child in elem:
+        depth(child, level + 1)
+
+# Note : Level is reset to 0 on every parent node is called when we found leve == depth the we update the maxdepth with +1
+        
+
 if __name__ == '__main__':
     n = int(input())
     xml = ""

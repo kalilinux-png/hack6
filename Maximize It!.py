@@ -1,16 +1,11 @@
-##import math
-##M,N= map(int,input().split())
-##def square(n):
-##    return n*n
-##def max_int(M):
-##    for a in range(M):
-##        yield max(map(int,input().split()))
-##
-####print(sum(list(map(square,list(max_int(M)))))%N)
-M,N= map(int,input().split())
-list1= []
-for a in range(M):
-    list1.append(max(map(int,input().split())))
-    print(list1)
-print(sum(tuple([ a*a for a in list1]))%N)
-    
+from itertools import product
+k,m =3,1000 # map(int,input().split())
+main_list = [ [5,4],[7,8,9],[5,7,8,9,10]]
+# while k:
+#     data = list(map(int,input().split()))[1:]
+#     main_list.append(data)
+#     k-=1
+
+print(len(list(product(*main_list))))
+r=map(lambda x:sum(i*i for i in x)%m, product(*main_list) )
+print(max(r))

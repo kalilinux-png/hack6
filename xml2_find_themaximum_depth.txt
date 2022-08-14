@@ -1,4 +1,4 @@
-11
+16
 <feed xml:lang='en'>
   <title>HackerRank</title>
   <subtitle lang='en'>Programming challenges</subtitle>
@@ -7,6 +7,11 @@
   <entry>
   	<author gender='male'>Harsh</author>
     <question type='hard'>XML 1</question>
+    <description type='text'>This is related to XML parsing</description>
+  </entry>
+  <entry>
+  	<author gender='male'>Harsh</author>
+    <question type='medium'>XML 2</question>
     <description type='text'>This is related to XML parsing</description>
   </entry>
 </feed>
